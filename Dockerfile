@@ -1,7 +1,7 @@
 #
 # Gradle build sample dockerfile from: https://codestijl.dev/2020/09/14/a-gradle-build-in-docker/
 #
-FROM gradle:latest as build-image
+FROM gradle:7.3.3-jdk as build-image
 WORKDIR /home/gradle/project
 
 #

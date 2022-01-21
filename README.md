@@ -46,6 +46,7 @@ Building tomcat
 ```
 
 - Visit `localhost:8080` in your browser. You should see an output like this.
+![Explanation and links to Tomcat servlets examples (directly, via reverse proxy or balancer)](./resources/screenshot-01.png)
 
 
 ## License
