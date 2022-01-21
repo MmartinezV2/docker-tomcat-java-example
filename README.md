@@ -2,7 +2,7 @@
 
 [![Software License][ico-license]](LICENSE.md)
 
-This is a simple example for running a docker container with tomcat and java.
+This is an example for running a stack of two docker container's with tomcat and java and an Apache reverse http proxy as a Load Balancer to show the use of Tomcat's Sticky Session features.
 
 This is a modified version by Manuel Martínez from Maik Hilker's one [maik-hilters-project].
 
@@ -10,8 +10,8 @@ This example adds:
 
   - Build servlets on a gradle docker container
   - Use of multistage builds
-  - Two example servlets from Tomcat9-Examples: HelloWold and Session
-  - Show use of Sticky Sessions with Apache Reverse Proxy
+  - Two example servlets from Tomcat9-Examples: HelloWorld and Session
+  - Shows the use of Sticky Sessions with Apache Reverse Proxy http balancer
 
 ## Get it up and running
 
