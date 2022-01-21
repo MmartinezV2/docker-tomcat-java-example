@@ -1,4 +1,4 @@
-# Docker Tomcat Java Example
+# Docker Tomcat Java Example & Sticky Session on Apache Balancer
 
 [![Software License][ico-license]](LICENSE.md)
 
@@ -8,7 +8,7 @@ This is a modified version by Manuel Martínez from Maik Hilker's one [maik-hilt
 
 This example adds:
 
-  - Build servlets on a gradle docker container
+  - Build servlets on a gradle docker container (local gradle install not needed)
   - Use of multistage builds to build a small customized Tomcat image with our servlets
   - Two example servlets from Tomcat9-Examples: HelloWorld and Session
   - Shows the use of Sticky Sessions with Apache Reverse Proxy http balancer
