@@ -1,0 +1,34 @@
+</!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apache & Tomcat Reverse Proxy Example</title>
+</head>
+<body>
+    <h1>Apache & Tomcat Reverse Proxy Example</h1>
+    <p>This is a demonstration page for educational use on Web Application Deployment at <a href="https://www.esliceu.com" target="_blank">EsLiceu.com</a></p>
+    <p>By using the following links you will see the difference between a http reverse proxy balancing to a tomcat pool and to a tomcat routed pool using jvmRoute and Sticky</p>
+    <p>Examples based on the work of:
+        <ul>
+            <li>Maik Hilter - <a href="https://github.com/mhilker/docker-tomcat-java-example" target="_blank">https://github.com/mhilker/docker-tomcat-java-example</a></li>
+            <li>Darren Danvers - <a href="https://codestijl.dev/2020/09/14/a-gradle-build-in-docker/" target="_blank">https://codestijl.dev/2020/09/14/a-gradle-build-in-docker/</a></li>
+            <li>Chandan Kumar - <a href="https://geekflare.com/tomcat-load-balancer-using-mod-proxy-and-session-sticky/" target="_blank"">https://geekflare.com/tomcat-load-balancer-using-mod-proxy-and-session-sticky/</a></li>
+            <li>Sample code from Tomcat9-Examples</li>
+        </ul>
+    </p>
+    <p>Local links (supposing you are accessing them on localhost):
+        <ul>
+            <li>1st Tomcat container (direct/no proxied): <a href="http://localhost:8091/">http://localhost:8091/</a></li>
+            <li>2nd Tomcat container (direct/no proxied): <a href="http://localhost:8092/">http://localhost:8092/</a></li>
+            <li>1st Tomcat container (proxied): <a href="/web1/">http://localhost:8080/web1/</a></li>
+            <li>2nd Tomcat container (proxied): <a href="/web2/">http://localhost:8080/web2/</a></li>
+            <li>Tomcat Load Balancer Pool (without sticky sessions): <a href="/loadbalancer/">http://localhost:8080/loadbalancer/</a></li>
+            <li>Tomcat Load Balancer Pool (using sticky sessions): <a href="/stickyloadbalancer/">http://localhost:8080/stickyloadbalancer/</a></li>
+        </ul>
+    </p>
+    <p>Note that on the Routed Load Balancer Pool, once you (a client) stablish a session you will always be routed to the same Tomcat instance. This way, there's no need to use clustering features to share sessions between tomcat instances. You can use standalone tomcat instances.</p>
+    <p>Reload the web page on the loadbalancer links to see the efect of the use of sticky sessions</p>
+</body>
+</html>
