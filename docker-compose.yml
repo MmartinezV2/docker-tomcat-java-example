@@ -1,10 +1,27 @@
 version: '3'
-
 services:
-
-  tomcat:
+  tomcat1:
     build:
       context: .
       dockerfile: Dockerfile
+    hostname: tomcat1
     ports:
-      - "8080:8080"
+      - "8091:8080"
+    volumes:
+      - "./tomcat-conf/tomcat1/server.xml:/usr/local/tomcat/conf/server.xml"
+  tomcat2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    hostname: tomcat2
+    ports:
+      - "8092:8080"
+    volumes:
+      - "./tomcat-conf/tomcat2/server.xml:/usr/local/tomcat/conf/server.xml"
+  apache:
+    image: httpd:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - "./apache-conf/myhttpd.conf:/usr/local/apache2/conf/httpd.conf"
+      - "./apache-conf/index.html:/usr/local/apache2/htdocs/index.html"
