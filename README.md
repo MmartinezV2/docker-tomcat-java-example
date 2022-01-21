@@ -4,7 +4,7 @@
 
 This is a simple example for running a docker container with tomcat and java.
 
-It's a modified version by Manuel Martínze from Maik Hilker's one.
+This is a modified version by Manuel Martínez from Maik Hilker's one.
 
 This example adds:
 
