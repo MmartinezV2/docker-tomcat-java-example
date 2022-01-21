@@ -4,7 +4,7 @@
 
 This is a simple example for running a docker container with tomcat and java.
 
-This is a modified version by Manuel Martínez from Maik Hilker's one.
+This is a modified version by Manuel Martínez from Maik Hilker's one [maik-hilters-project].
 
 This example adds:
 
@@ -45,9 +45,8 @@ Building tomcat
 ...
 ```
 
-- Visit `localhost:8888` in your browser. You should see an output like this.
+- Visit `localhost:8080` in your browser. You should see an output like this.
 
-![Hello World Output with Docker and Java + Tomcat](./resources/screenshot-01.png)
 
 ## License
 
@@ -57,3 +56,4 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [install-docker]: https://docs.docker.com/engine/installation
 [install-docker-compose]: https://docs.docker.com/compose/install
 [install-gradle]: https://gradle.org/install
+[maik-hilters-project]: https://github.com/mmartinezv2/docker-tomcat-java-example
