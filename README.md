@@ -57,4 +57,4 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [install-docker]: https://docs.docker.com/engine/installation
 [install-docker-compose]: https://docs.docker.com/compose/install
 [install-gradle]: https://gradle.org/install
-[maik-hilters-project]: https://github.com/mhilker/docker-tomcat-java-example
+[maik-hilkers-project]: https://github.com/mhilker/docker-tomcat-java-example
