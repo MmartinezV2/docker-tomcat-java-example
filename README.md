@@ -22,7 +22,7 @@ This example adds:
 - Clone this repository.
 
 ``` bash
-$ git clone https://github.com/mhilker/docker-tomcat-java-example
+$ git clone https://github.com/mmartinezv2/docker-tomcat-java-example
 ```
 
 - Switch to the cloned directory.
@@ -56,4 +56,4 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 [install-docker]: https://docs.docker.com/engine/installation
 [install-docker-compose]: https://docs.docker.com/compose/install
 [install-gradle]: https://gradle.org/install
-[maik-hilters-project]: https://github.com/mmartinezv2/docker-tomcat-java-example
+[maik-hilters-project]: https://github.com/mhilker/docker-tomcat-java-example
